@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - 101-quote.c
+ * main - 101quote.c
  *
- * Return 1 (success)
+ * Return Always 1 (success)
  */
 int main(void)
 {
-	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	write(2,
+	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
